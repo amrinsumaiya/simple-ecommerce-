@@ -1,25 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Simple E-commerce</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Simple E-commerce</h1>
-    </header>
 
+<header>
+    <h1>MyShop</h1>
     <div class="cart">
-        <h3>Cart</h3>
-        <ul id="cart-items"></ul>
-        <strong>Total: $<span id="cart-total">0</span></strong>
-        <button onclick="processOrder()">Checkout</button>
+        🛒 Cart: <span id="cart-count">0</span>
+    </div>
+</header>
+
+<main class="products">
+    <div class="product">
+        <img src="https://via.placeholder.com/200" alt="Product">
+        <h3>Product 1</h3>
+        <p>₹499</p>
+        <button onclick="addToCart()">Add to Cart</button>
     </div>
 
-    <div class="products" id="products"></div>
+    <div class="product">
+        <img src="https://via.placeholder.com/200" alt="Product">
+        <h3>Product 2</h3>
+        <p>₹799</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
 
-    <script src="script.js"></script>
+    <div class="product">
+        <img src="https://via.placeholder.com/200" alt="Product">
+        <h3>Product 3</h3>
+        <p>₹999</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+</main>
+
+<footer>
+    <p>© 2025 MyShop. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
